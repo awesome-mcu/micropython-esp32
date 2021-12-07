@@ -21,7 +21,7 @@ docker run -ti --rm -v ~/Projects/esp32/src/micropython-1.17:/micropython \
     bash -c -l "cd micropython && \
         make -C mpy-cross && \
         make -C ports/esp32 submodules && \
-        make -C ports/esp32 BOARD=GENERIC_C3"
+        make -C ports/esp32 BOARD=GENERIC_S2"
 
 
 // 编译后烧录固件
