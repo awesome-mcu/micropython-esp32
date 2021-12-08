@@ -59,6 +59,9 @@ esptool.py --chip esp32-S2 \
 
 
 REF:
+pymakr global config:
+https://github.com/pycom/pymakr-vsc/blob/develop/settings.md
+
 https://github.com/dhylands/rshell
 https://esp32.iotclub.io/flash_firmware
 https://blog.csdn.net/qq_34440409/article/details/119175631
