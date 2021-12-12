@@ -10,6 +10,7 @@ screen /dev/cu.usbserial-0001 115200
 export AMPY_PORT=/dev/cu.wchusbserial1420
 ampy --baud 115200 ls
 ampy put main.py
+ampy get [SOURCE_FILE_NAME] [DESTINATION_FILE_NAME]
 ampy rm main.py
 
 
@@ -49,16 +50,26 @@ esptool.py --chip esp32-S2 \
     --port /dev/cu.wchusbserial1420 \
     erase_flash
 
-// 烧录固件
+// 烧录固件 A
 esptool.py --chip esp32-S2 \
     --port /dev/cu.wchusbserial1420 \
     --baud 460800 \
     write_flash -z 0x1000 \
     esp32s2-firmware.bin
 
+// 烧录固件 B
+esptool.py --chip esp32-S2 \
+    --port COM3 \
+    write_flash flash_size=detect 0 \
+    path/to/esp8266-20210902-v1.17.bin
+
+
 
 
 REF:
+乐鑫模组对照表
+https://www.espressif.com/zh-hans/products/modules
+
 pymakr global config:
 https://github.com/pycom/pymakr-vsc/blob/develop/settings.md
 
