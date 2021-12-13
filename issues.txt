@@ -11,3 +11,7 @@ kextstat
 # install driver
 https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
 https://ftdichip.com/drivers/vcp-drivers/
+
+
+# esp32c3 烧录
+https://www.bilibili.com/read/cv13003146
