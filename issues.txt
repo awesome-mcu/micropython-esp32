@@ -11,4 +11,3 @@ kextstat
 # install driver
 https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
 https://ftdichip.com/drivers/vcp-drivers/
-
