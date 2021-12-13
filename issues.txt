@@ -1,3 +1,14 @@
 
-检查开发板是否连接成功并获取端口号：
+# 检查开发板是否连接成功并获取端口号：
 lsusb && dmesg
+
+
+ # list out all of the "kernel extensions," including the driver, that are installed on your mac.
+kextstat
+
+
+
+# install driver
+https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
+https://ftdichip.com/drivers/vcp-drivers/
+
