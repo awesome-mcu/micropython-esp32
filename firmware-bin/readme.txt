@@ -5,6 +5,7 @@ esptool.py --chip esp32s2 \
     --before default_reset \
     --after hard_reset \
     write_flash \
+    --erase-all \
     --flash_mode dio \
     --flash_size detect \
     --flash_freq 80m \
@@ -20,6 +21,7 @@ esptool.py --chip esp32-c2 \
     --before default_reset \
     --after hard_reset \
     write_flash \
+    --erase-all \
     --flash_mode dio \
     --flash_size detect \
     --flash_freq 80m \
