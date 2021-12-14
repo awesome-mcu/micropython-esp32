@@ -4,9 +4,10 @@
 # $ docker build -t builder-esp-idf:v4.3.1 --build-arg IDF_VERSION=v4.3.1 .
 #
 # Build Esp32s2 Micropython Flash:
-# $ git clone -b v1.17 git@github.com:micropython/micropython.git
+# $ git clone -b v1.17 https://github.com/micropython/micropython.git
 # $ docker run -ti --rm -v micropython:/root/esp/micropython builder-esp-idf:v4.3.1 \
-#       bash -c -l "cd micropython && \
+#       bash -c -l ". esp-idf/export.sh && \
+#       cd micropython && \
 #       make -C mpy-cross && \
 #       make -C ports/esp32 submodules && \
 #       make -C ports/esp32 BOARD=GENERIC_S2"
