@@ -6,6 +6,22 @@ ls /dev/cu.*
 screen /dev/cu.usbserial-0001 115200
 
 
+-----------------------------------------
+spi flash config
+* spi speed:
+    40Mhz
+    26.7Mhz
+    20Mhz
+    80Mhz
+* spi mode
+    qio
+    qout
+    dio
+    dout
+    fastrd
+-----------------------------------------
+
+
 // ampy
 export AMPY_PORT=/dev/cu.wchusbserial1420
 ampy --baud 115200 ls
