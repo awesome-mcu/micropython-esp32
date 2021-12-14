@@ -5,7 +5,7 @@
 /builder/*
 
 // driver
-user -> uart
+usb -> uart
 
 // example of  micropython for esp32x
 /example/*
