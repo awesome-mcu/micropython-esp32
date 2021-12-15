@@ -20,7 +20,7 @@ alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
 
 # 开始创建工程并配置
-cd ~/esp/hello_world
+cd ~/esp/esp-idf/examples/get-started/hello_world
 idf.py set-target esp32
 idf.py menuconfig
 

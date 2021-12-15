@@ -5,7 +5,7 @@
 #
 # Build Esp32s2 Micropython Flash:
 # $ git clone -b v1.17 https://github.com/micropython/micropython.git
-# $ docker run -ti --rm -v micropython:/root/esp/micropython builder-esp-idf:v4.3.1 \
+# $ docker run -ti --rm -v /<PATH>/<TO>/micropython:/root/esp/micropython builder-esp-idf:v4.3.1 \
 #       bash -c -l ". esp-idf/export.sh && \
 #       cd micropython && \
 #       make -C mpy-cross && \
