@@ -12,6 +12,12 @@
 #       make -C ports/esp32 submodules && \
 #       make -C ports/esp32 BOARD=GENERIC_S2"
 #
+# notes:
+#   * git cdn for mainland china:
+#       - github.com.cnpmjs.org
+#   * git clone submodules:
+#       - git submodule update --init --recursive
+#
 
 
 FROM ubuntu:20.04
