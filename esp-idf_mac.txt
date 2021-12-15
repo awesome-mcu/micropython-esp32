@@ -1,0 +1,36 @@
+# 安装依赖
+brew install cmake ninja dfu-util
+
+# 获取esp-idf源码
+# // 更新至一个发布分支
+# git fetch && git checkout release/v4.4-beta1 && git pull
+# git submodule update --init --recursive
+mkdir -p ~/esp && cd $_
+git clone -b v4.3.1 --recursive https://github.com.cnpmjs.org/espressif/esp-idf.git
+
+# 设置工具
+cd ~/esp/esp-idf
+export IDF_GITHUB_ASSETS="dl.espressif.com/github_assets"
+./install.sh
+
+
+# 设置环境变量
+. $HOME/esp/esp-idf/export.sh
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
+
+
+# 开始创建工程并配置
+cd ~/esp/hello_world
+idf.py set-target esp32
+idf.py menuconfig
+
+
+# 编译工程
+idf.py build
+
+
+# 烧录到设备
+idf.py -p PORT [-b BAUD] flash
+
+# 监视器
+idf.py -p /dev/ttyUSB0 monitor
