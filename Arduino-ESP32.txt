@@ -1,0 +1,15 @@
+https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html
+
+# the support for new chips (ESP32-S2 and ESP32-C3) is in the development release.
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
+
+
+
+* Install the latest Arduino IDE from arduino.cc.
+* Open Terminal and execute the following command (copy -> paste and hit enter):
+
+mkdir -p ~/Projects/arduino/hardware/espressif && \
+cd ~/Projects/arduino/hardware/espressif && \
+git clone git@github.com:espressif/arduino-esp32.git esp32 && \
+cd esp32/tools && \
+python get.py
