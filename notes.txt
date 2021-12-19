@@ -101,6 +101,13 @@ esptool.py -p /dev/cu.wchusbserial1420 verify_flash \
     --diff yes \
     0x0 micropython.bin
 ------------------------------------------
+// node-red
+docker run -it --name nodered \
+    -p 1880:1880 \
+    -v node_red_data:/data \
+    nodered/node-red
+------------------------------------------
+
 
 
 
