@@ -11,6 +11,8 @@ esp01s(esp8266)固件bin下载
 https://docs.ai-thinker.com/en/%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB
 https://blog.csdn.net/jackcsdnfghdtrjy/article/details/104770612/
 https://www.youtube.com/watch?v=2r8evY6-1M0
+https://www.jianshu.com/p/17273d0def32
+
 
 AT 命令
 https://docs.espressif.com/projects/esp-at/zh_CN/latest/AT_Command_Set/Basic_AT_Commands.html
