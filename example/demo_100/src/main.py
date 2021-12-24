@@ -1,15 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-example:
-https://github.com/GregWoods/wifigui-esp32-upy/blob/cd66f06e93/src/main.py
-"""
+from machine import Pin, Timer
+led = Pin(25, Pin.OUT)
+timer = Timer()
 
-from machine import Pin
-from time import sleep
+def blink(timer):
+    led.toggle()
 
-led = Pin(2, Pin.OUT)
-
-
-while True:
-    led.value(not led.value())
-    sleep(0.5)
+timer.init(freq=2.5, mode=Timer.PERIODIC, callback=blink)

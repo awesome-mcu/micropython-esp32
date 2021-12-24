@@ -30,6 +30,14 @@ ampy get [SOURCE] [DESTINATION]
 ampy rm main.py
 
 rshell --buffer-size=30 -p /dev/ttyUSB0
+>
+>>> repl
+>>> help("modules")
+>>> CTRL+x
+>
+
+
+
 
 // build micropython for esp32s2
 git clone -b v1.17 git@github.com:micropython/micropython.git micropython-1.17
