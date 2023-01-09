@@ -1,0 +1,2 @@
+https://github.com/youxinweizhi/actions/blob/a5aae079b3beda4137abb8466b128131a4ca6365/micropython/MYESP32_C3_2M/modules/smartconfig.py
+https://github.com/youxinweizhi/actions/blob/a5aae079b3beda4137abb8466b128131a4ca6365/micropython/smartconfig.c
