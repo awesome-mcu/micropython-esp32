@@ -1,3 +1,12 @@
 import upip
 upip.install('notes-pico')
 -------------------------------------
+
+1. 查看栈、堆
+>>> import micropython
+>>> micropython.mem_info()
+
+2. 查看集成的Flash存储空间大小
+>>> import esp
+>>> esp.flash_size()
+>>> esp.flash_size()/1024/1024

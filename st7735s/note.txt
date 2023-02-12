@@ -1,0 +1,13 @@
+https://blog.csdn.net/chentuo2000/article/details/126598546
+https://blog.csdn.net/weixin_42880082/article/details/126719674
+https://github.com/funnygeeker/micropython-easydisplay
+https://github.com/cheungbx/st7735-esp8266-micropython
+https://forum.micropython.org/viewtopic.php?t=9993
+https://github.com/adafruit/micropython-adafruit-rgb-display/blob/master/st7735.py
+https://www.bilibili.com/read/cv15743172/
+https://chuna.tech/blog/device/ESP32/measure-temp-with-esp32/
+https://ymt-lab.com/post/2020/esp32-micropython-dht11/
+
+# good
+https://how2electronics.com/interfacing-dht11-temperature-humidity-sensor-with-raspberry-pi-pico/
+https://www.instructables.com/DHT11-With-Raspberry-Pi-Pico/
